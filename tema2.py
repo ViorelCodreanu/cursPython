@@ -1,38 +1,38 @@
 
-## problema 3
-
-# user_input = input('type an integer: ')
-#
-# try:
-#     user_input = int(user_input)
-#     print(user_input)
-#
-# except ValueError as e:
-#     print(0)
 
 
+user_input = input('type an integer: ')
 
-## problema 1
+try:
+    user_input = int(user_input)
+    print(user_input)
 
-# def my_function(*x, **y):
-#     return sum(filter(lambda n: isinstance(n, (int, float)), x))
-#
-# print(my_function(5, 'sdfg', 2.65, -45, sd=545))
+except ValueError as e:
+    print(0)
 
 
-## problema 2
+
+
+
+def my_function(*x, **y):
+    return sum(filter(lambda n: isinstance(n, (int, float)), x))
+
+print(my_function(5, 'sdfg', 2.65, -45, sd=545))
+
+
+
 
 ### functia care face suma tuturor numerelor de la [0, n]:
 
-# def my_sum(n):
-#
-#     x = 0
-#     if n == 0:
-#         return x
-#
-#     return n + my_sum(n-1)
-#
-# print(my_sum(0))
+def my_sum(n):
+
+    x = 0
+    if n == 0:
+        return x
+
+    return n + my_sum(n-1)
+
+print(my_sum(0))
 
 
 ### functia care face suma tuturor numerelor pare si impare de la [0, n]
